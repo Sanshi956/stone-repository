@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#d1{
+	width:500px;
+	height:500px;
+	background:#ddd
+	
+}
+
+#d2{
+	width:300px;
+	height:300px;
+	background:#aaa
+}
+
+
+#d3{
+	width:100px;
+	height:100px;
+	background:#888
+}
+
+/*
+d2 是  d1 的子标签
+d1 是  d2 的子标签
+
+d2,d3 是 d1 的后代标签
+d1 是 d2,d3 的祖先标签
+*/
+/*子元素选择器*/
+#d1>#d2{
+	border:red 5px dotted;
+}
+/*后代选择器   后代选择器优先级低于元素选择器 */
+#d1 div{
+	border:blue 10px solid;
+	background-color: green
+}
+/*:开头叫伪类选择器  :hover 是表示鼠标悬停*/
+li:hover{
+	background-color:yellow;
+
+}
+/*序号选择器*/
+li:nth-child(2) {
+ background-color: blue;
+	
+}
+
+
+</style>
+</head>
+<body>
+	<div id="d1">
+		<div id="d2">
+			<div id="d3">
+				<ul>
+					<li>高中</li>
+					<li>大专</li>
+					<li>本科</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
