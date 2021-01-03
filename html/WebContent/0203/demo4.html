@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+img {
+	width: 300px;
+	displsy: none;
+	visibility: hidden;
+	/*
+	inline 行级元素 不能设置高宽
+	block 块级元素  可设置高宽
+	inline-block 行内快 可设置高宽
+	none 不显示
+	
+	visibility: hidden 不可见 但是保留大小,不脱离文档流
+	*/
+}
+
+#sp1 {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background: green
+}
+
+li {
+	display: inline-block
+}
+</style>
+</head>
+<body>
+<span>普通文本标签用于设置文字样式</span>
+<img alt="" src="../0101/pictures/自来也.jpg">
+<span id="sp1">inline-block是行内块</span>
+<span>display用户控制元素显示类型</span>
+<ol>
+	<li>红色
+	<li>绿色
+	<li>蓝色
+
+
+
+</ol>
+
+
+</body>
+</html>

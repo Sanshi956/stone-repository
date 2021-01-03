@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>元素定位</title>
+<style type="text/css">
+#d1 {
+	width: 600px;
+	height: 600px;
+	background: red;
+}
+
+#d2 {
+	width: 500px;
+	height: 500px;
+	background: green;
+	position: fixed; /*static absolute relative fixed*/
+	left: 100px;
+	top: 30px
+}
+
+#d3 {
+	width: 500px;
+	height: 500px;
+	background: blue;
+}
+
+/*
+position 
+static 静态
+relative 相对
+absolute 绝对与float一样 设置为绝对定位的元素 会脱离文档流(下面或者右边的元素顶上来)
+fixed 固定 与foalt一样 设置为固定的元素
+	absolute vs fixed
+	绝对定位absolute是将该元素固定在父元素之上
+	固定(fixed)是将元素固定在页面窗口上
+	
+inherit 继承
+*/
+</style>
+
+
+
+</head>
+<body>
+	<div style="padding: 30px">
+		<div id="d1"></div>
+		<div id="d2"></div>
+		<div id="d3"></div>
+	</div>
+
+
+
+</body>
+</html>
