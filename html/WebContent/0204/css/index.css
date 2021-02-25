@@ -108,13 +108,12 @@ main {
 .xiao>div:nth-child(1) {
 	height: 150px;
 }
-
 .left {
 	float: left;
 }
 
 .tj:nth-child(4) {
-	margin: 5px auto;
+	margin: 15px auto;
 }
 
 .xiao {
@@ -258,12 +257,10 @@ body {
 	display: inline-block;
 }
 
-.alist>div:nth-child() {
-	
-}
-
 .alist>div>span {
 	margin: 10px 10px 10px 0px;
+	font-size: small;
+	font-weight: bold;
 }
 
 .alist>div>span:nth-child(1) {
@@ -277,11 +274,10 @@ body {
 	border-top: 1px #ddd solid;
 }
 
-.alist>table td {
+.alist>table td:nth-child(1) {
 	padding: 5px;
 	border-bottom: 1px #eee dashed;
 }
-
 a {
 	text-decoration: none;
 	color: #666;
@@ -336,10 +332,10 @@ a {
 	width: 100%;
 }
 
-.right_bw>table td {
+.right_bw>table td{
 	padding: 5px 15px;
 	border-bottom: 1px #eee dashed;
-	font-size: x-small;
+	font-size: 12px;
 }
 /***********************/
 .right_bw1 {
@@ -358,7 +354,6 @@ a {
 	vertical-align: middle;
 	
 }
-
 .right_bw1>div>div{
 	border: #aaa 1px solid;
 	font-size: medium;
@@ -371,19 +366,180 @@ a {
 	clear: both;
 	width: 100%;
 }
-
 .right_bw1>table td {
 	padding: 5px 15px;
 	border-bottom: 1px #eee dashed;
 	font-size: x-small;
 }
+/*************下部推荐文章********************/
+.alist_bottom>div>span{
+	margin: 10px 10px 10px 0px;
+	border-left: green 3px solid;
+	padding: 5px;
+	font-weight: bold;
+	font-size: small;
+}
+.alist_bottom table {
+	clear: both;
+	width: 100%;
+	border-top: 1px #ddd solid;
+	color : white;
+}
+.alist_bottom table td{
+	background:#f8f8f8;
+}
 
-
-
+.alist_bottom table td img{
+   width: 23%;
+   height: 130px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    float: left;
+    display: inline-block;
+}
+.bottom_1{
+	width: 150px;
+    height: 35px;
+    line-height: 36px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgba(28,35,39,0.6);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+	margin: 105px 0px 0px 10px;
+}
+.bottom_wz{
+	padding:10px 10px 0px 10px;
+    display: inline-block;
+    width:632px;
+    vertical-align: middle;
+}
+.nr{
+	font-size: 13px;
+    color: #cccccc;
+    line-height: 20px;
+	margin-bottom: 5px;
+}
+.bt{
+	display: inline-block;
+	color:white;
+	font-weight:bold;
+	font-size:medium;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+.xq span{
+	margin:0px;
+    border:0px;
+    padding: 0px;
+}
+.xq span:nth-child(1){
+	color: #cccccc;
+    font-size: 12px;
+}
+.xq span:nth-child(2){
+	color: #ffffff;
+	margin-left: 20px;
+	font-size: 12px;
+}
+.xq span:nth-child(3){
+	color: #ffffff;
+	margin-left: 20px;
+	font-size: 12px;
+}
+.xq span:nth-child(4){
+	color: #ffffff;
+	margin-left: 20px;
+	font-size: 12px;
+}
+.xq a{
+	text-decoration: underline;
+    color: #fff;
+}
+#more{
+	width: auto;
+	height: auto;
+    line-height: 36px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgba(28,35,39,0.6);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin:0px 1px 0px 1px;
+    margin:0px 10px 10px 10px;
+}
+.bg{
+	margin:0px 10px 0px 10px;
+	background: #000000;
+	height: 154px;
+	border-radius: 5px;
+	display:inline-block;
+}
+.bd1{
+	margin:10px 10px 0px 10px;
+}
+/*底部友情链接列表*/
+.lianjie>div:nth-child(1){
+	padding:5px 5px 5px 0px;
+	height: 27px;
+	border-bottom: solid #EAEAEA 1px;
+}
+.lianjie>div:nth-child(1)>span:nth-child(1){
+	border-left: green 3px solid;
+	padding: 5px;
+	font-size: small;
+	font-weight:bold;
+}
+.lianjie>div:nth-child(1)>span:nth-child(2)>a{
+	color: #333333;
+	text-decoration: underline;
+	font-size: 12px;
+}
+.lianjie>div>span:nth-child(2){
+	padding: 5px;
+	font-size: small;
+}
+.lianjie_list{
+	height:100px;
+	padding:10px;
+}
+.lianjie_list>span{
+	margin: 10px;
+	font-size: 12px;
+}
+/*页脚设计*/
+footer>div:nth-child(1){
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #1C2327;
+    color: #ffffff;
+}
+footer>div:nth-child(1)>div{
+	width: 1200px;
+    height: auto;
+    margin: 0px auto;
+    display: block;
+    overflow: hidden;
+}
+footer>div:nth-child(1)>div>a{
+	text-decoration: none;
+    font-size: 14px;
+    color:#FFFFFF;
+    font-family: "微软雅黑";
+}
+footer>div>div>span:nth-child(2){
+	font-size: 12px;
+	margin-left: 50px;
+}
+/***********主体设置**************/
 body {
 	background-color: #eee
 }
-
 #content-left>div, #content-right>div {
 	background: #f8f8f8;
 	margin-bottom: 10px;
